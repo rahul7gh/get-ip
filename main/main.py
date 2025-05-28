@@ -10,7 +10,7 @@ import requests
 
 url = "https://api.ipify.org?format=json"
 try:
-    response = requests.get(url
+    response = requests.get(url)
     response.raise_for_status()  # Raise exception for HTTP errors
     data = response.json()
     #output=json.dumps({"output": {"ip": data["ip"],"cpu":"16","memory":"16384MB","disk":"131072MB"}})
